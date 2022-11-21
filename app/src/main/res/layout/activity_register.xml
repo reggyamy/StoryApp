@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="32dp"
+    tools:context=".ui.RegisterActivity">
+
+    <TextView
+        android:id="@+id/tv_header"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text= "Login"
+        android:layout_marginTop="130dp"
+        android:alpha="0"
+        android:textColor="@color/purple_200"
+        android:textSize="24sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="14sp"
+        android:alpha="0"
+        android:layout_marginTop="3dp"
+        android:textColor="@color/black"
+        android:text="Masukkan semua data untuk melanjutkan"/>
+
+    <com.reggya.stroryapp.ui.CustomEditText
+        android:id="@+id/name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:hintEnabled="true"
+        android:hint="Nama"
+        android:alpha="0"
+        android:textSize="14sp"
+        android:visibility="gone"
+        android:padding="12dp"
+        android:singleLine="true"
+        android:maxLines="1"
+        android:layout_marginTop="10dp"
+        tools:ignore="HardcodedText" />
+
+    <com.reggya.stroryapp.ui.CustomEditText
+        android:id="@+id/email"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Email"
+        android:alpha="0"
+        android:textSize="14sp"
+        android:padding="12dp"
+        android:singleLine="true"
+        android:maxLines="1"
+        android:layout_marginTop="10dp"/>
+
+    <com.reggya.stroryapp.ui.CustomEditText
+        android:id="@+id/password"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Password"
+        android:alpha="0"
+        android:inputType="textPassword"
+        android:textSize="14sp"
+        android:padding="12dp"
+        android:singleLine="true"
+        android:maxLines="1"
+        android:layout_marginTop="10dp"/>
+
+    <LinearLayout
+        android:id="@+id/container_register"
+        android:layout_width="match_parent"
+        android:alpha="0"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/question"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="14sp"
+            android:textColor="@color/black"
+            android:text="Belum punya akun ?"/>
+
+        <TextView
+            android:id="@+id/register"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Register"
+            android:textSize="14sp"
+            android:textColor="@color/purple_200"
+            android:layout_marginStart="5dp"/>
+    </LinearLayout>
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/bt_login"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:alpha="0"
+        android:textColor="@color/white"
+        android:textAllCaps="false"
+        android:textSize="18sp"
+        android:layout_marginTop="30dp"
+        android:background="@drawable/bg_bt"
+        android:backgroundTint="@color/purple_200"
+        android:text="Login"/>
+
+
+</LinearLayout>

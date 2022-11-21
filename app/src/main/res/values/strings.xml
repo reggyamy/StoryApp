@@ -1,0 +1,4 @@
+<resources>
+    <string name="app_name">StroryApp</string>
+    <string name="hai">Hai, %s</string>
+</resources>

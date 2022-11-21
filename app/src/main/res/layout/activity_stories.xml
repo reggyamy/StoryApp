@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/purple"
+    tools:context=".ui.StoriesActivity">
+
+
+    <ImageButton
+        android:id="@+id/bt_menu"
+        android:layout_width="40dp"
+        android:layout_height="wrap_content"
+        android:background="@drawable/bg_bt"
+        android:layout_margin="16dp"
+        android:src="@drawable/ic_round_menu_24"/>
+
+    <TextView
+        android:id="@+id/welcoming"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="55dp"
+        android:textSize="24sp"
+        android:textColor="@color/purple_200"
+        android:textStyle="bold"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/hai"/>
+
+    <LinearLayout
+        android:id="@+id/add_story"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/bg_bt"
+        android:paddingVertical="5dp"
+        android:paddingHorizontal="16dp"
+        android:layout_gravity="end"
+        android:layout_marginTop="55dp"
+        android:layout_marginEnd="16dp"
+        android:backgroundTint="@color/purple_200"
+        android:orientation="horizontal">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Add Story"
+            android:layout_gravity="center_vertical"
+            android:textSize="14sp"
+            android:textColor="@color/white"
+            android:paddingEnd="5dp"/>
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_round_add_box_24"/>
+    </LinearLayout>
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/rv_stories"
+        android:layout_marginTop="100dp"
+        android:backgroundTint="@color/white"
+        android:background="@drawable/bg_ed_round"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:paddingTop="16dp"
+        tools:listitem="@layout/story_item"/>
+
+</FrameLayout>
